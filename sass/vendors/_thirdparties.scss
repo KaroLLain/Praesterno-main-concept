@@ -1,0 +1,343 @@
+/*
+*************************************************GRID
+
+<section class="grid-test">
+<div class="row">
+    <div class="col-1-of-2">Col-1-of-2</div>
+    <div class="col-1-of-2">Col-1-of-2</div>
+</div>
+<div class="row">
+    <div class="col-1-of-3">Col-1-of-3</div>
+    <div class="col-1-of-3">Col-1-of-3</div>
+    <div class="col-1-of-3">Col-1-of-3</div>
+</div>
+<div class="row">
+    <div class="col-1-of-3">Col-1-of-3</div>
+    <div class="col-2-of-3">Col-2-of-3</div>
+</div>
+<div class="row">
+    <div class="col-1-of-4">Col-1-of-4</div>
+    <div class="col-1-of-4">Col-1-of-4</div>
+    <div class="col-1-of-4">Col-1-of-4</div>
+    <div class="col-1-of-4">Col-1-of-4</div>
+</div>
+<div class="row">
+    <div class="col-1-of-4">Col-1-of-4</div>
+    <div class="col-1-of-4">Col-1-of-4</div>
+    <div class="col-2-of-4">Col-2-of-4</div>
+</div>
+<div class="row">
+    <div class="col-1-of-4">Col-1-of-4</div>
+    <div class="col-3-of-4">Col-3-of-4</div>
+</div>
+</section>
+
+*************************************************OUTLINES
+
+*************** In inner class
+
+outline: 1.5rem solid color;
+
+************* In outer class
+
+outline-offset: 2rem;
+
+*********************************************FLIP ANIMATION
+
+// offer-box-flip
+
+@keyframes flip-with-rotate {
+    0% {
+        transform: perspective(700px) rotateY(0);
+    }
+
+    100% {
+        transform: perspective(700px) rotateY(180deg);
+    }
+}
+
+
+***********************************************SHADED CIRCLE
+
+<div class="composition">
+                    <img src="img\A1.png" alt="Peace 1" class="composition__image composition__image--i1">
+
+                    <img src="img\A2.png" alt="Peace 2" class="composition__image composition__image--i2">
+             
+                    <img src="img\B1.png" alt="Peace 3" class="composition__image composition__image--i3">
+               
+                    <img src="img\B2.png" alt="Peace 4" class="composition__image composition__image--i4">
+                </div>
+
+
+        &__image {
+        position: absolute; 
+        z-index: 10;    
+        transition: all .7s; 
+
+        &--i1 {
+           left: 2rem;
+           top: -6rem;
+
+           animation: moveInRightImg1 1.4s ease-out;
+        }
+        &--i2 {
+           left: 21rem;
+           top: -6rem;
+
+           animation: moveInRightImg2 2.2s ease-out;
+        }
+        &--i3 {
+            left: 2rem;
+           top: 13rem;
+
+           animation: moveInRightImg3 1.2s ease-out;
+        }
+        &--i4 {
+            left: 21rem;
+           top: 13.1rem;
+
+           animation: moveInRightImg4 1.6s ease-out;
+        }
+
+        &:hover {
+            transform: scale(1.05)
+                       translate3D(-.5rem);
+            
+            z-index: 11;
+        }
+
+        
+    }
+
+    &:hover &__image:not(:hover) {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+    
+    ************************************************************* VIDEO
+
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted>
+                    <source src="img\video3.mp4" type="video/mp4">
+                    Your browser is no supported.
+                </video>
+            </div>
+
+
+
+            ***************************************************** FOOTER LOGO BOX
+
+             <div class="footer__logo-box">
+            <img src="img\logo22.png" alt="full logo" class="footer__logo">
+        </div>
+
+
+
+        ***************************************************************************** HTML OFFER SECTION
+
+        <section class="section-adolescent-offer">
+            <div class="u-center-text u-margin-bottom-medium" id="adolescent-offer">
+                <br>
+                <br>
+                <br>
+                <h2 class="heading-secondary">
+                    Oferta dla młodzieży
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__image card__image--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--1">Kontakt indywidualny</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>spotkania indywidualne</li>
+                                    <li>raz w tygodniu</li>
+                                    <li>50 minut</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__text">
+                                <div class="card__description-box">
+                                    <p class="card__description-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga sint dolores. Rerum fugiat velit optio veniam, deleniti corporis eligendi!</p>
+                                </div>
+                                <a href="#contactForm" class="btn btn--text">Zapisz się</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__image card__image--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--2">Grupa młodzieżowa</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>spotkania grupowe</li>
+                                    <li>raz w tygodniu</li>
+                                    <li>240 min</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__text">
+                                <div class="card__description-box">
+                                    <p class="card__description-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga sint dolores. Rerum fugiat velit optio veniam, deleniti corporis eligendi!</p>
+                                </div>
+                                <a href="#contactForm" class="btn btn--text">Zapisz się</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__image card__image--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--3">Spotkania rodzinne</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>spotkaj się z rodziną</li>
+                                    <li>raz na dwa tygodnie</li>
+                                    <li>50 minut</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__text">
+                                <div class="card__description-box">
+                                    <p class="card__description-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga sint dolores. Rerum fugiat velit optio veniam, deleniti corporis eligendi!</p>
+                                </div>
+                                <a href="#contactForm" class="btn btn--text">Zapisz się</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-bottom-medium" id="forparents-offer">
+                <br>
+                <h2 class="heading-secondary">
+                    Oferta dla rodziców
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__image card__image--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--1">Kontakt indywidualny</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>spotkania indywidualne</li>
+                                    <li>raz w tygodniu</li>
+                                    <li>50 minut</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__text">
+                                <div class="card__description-box">
+                                    <p class="card__description-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga sint dolores. Rerum fugiat velit optio veniam, deleniti corporis eligendi!</p>
+                                </div>
+                                <a href="#contactForm" class="btn btn--text">Zapisz się</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__image card__image--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--2">Grupa młodzieżowa</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>spotkania grupowe</li>
+                                    <li>raz w tygodniu</li>
+                                    <li>240 min</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__text">
+                                <div class="card__description-box">
+                                    <p class="card__description-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga sint dolores. Rerum fugiat velit optio veniam, deleniti corporis eligendi!</p>
+                                </div>
+                                <a href="#contactForm" class="btn btn--text">Zapisz się</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__image card__image--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span--3">Spotkania rodzinne</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>spotkaj się z rodziną</li>
+                                    <li>raz na dwa tygodnie</li>
+                                    <li>50 minut</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__text">
+                                <div class="card__description-box">
+                                    <p class="card__description-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga sint dolores. Rerum fugiat velit optio veniam, deleniti corporis eligendi!</p>
+                                </div>
+                                <a href="#contactForm" class="btn btn--text">Zapisz się</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            ************************************************************ BG VIDEO HTML
+
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img\video8.mp4" type="video/mp4">
+                    Your browser is no supported.
+                </video>
+            </div>
+
+*/

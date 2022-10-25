@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //1rem = 10px 10px/16px = 62.5%
+    scroll-behavior: smooth;
+
+    @include respond(tab-land) {
+        font-size: 56%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 43%;
+    }
+
+    @include respond(phone) {
+        font-size: 30%;
+    }
+
+    @include respond(bi-desktop) {
+        font-size: 70%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}

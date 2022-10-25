@@ -1,0 +1,58 @@
+.footer {
+    background-color: $color-gradient-pink;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: $color-gradient-four;
+
+    &__logo-box {
+        text-align: left;
+    }
+
+    &__logo {
+        width: 17rem;
+        height: auto;
+    }
+
+    &__navigation {
+        padding-top: 1rem;
+        display: inline-block;
+        float: right;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        
+        backface-visibility: hidden;
+
+        &:link,
+        &:visited {
+            color: $color-secondary;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-gradient-four;
+            box-shadow: $color-btn-shadow;
+            transform: scale(1.1);  
+        }
+    }
+
+    &__copyright {
+        padding-top: 1rem;
+    }
+}

@@ -1,0 +1,108 @@
+//text animation
+
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeftHp {
+  0% {
+      opacity: 0;
+      transform: translateX(-12rem);
+  }
+
+  100% {
+      opacity: 0.6;
+      transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(10rem);
+  }
+
+  80% {
+      transform: translateX(-1.5rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+//btn animation
+
+@keyframes moveInButton {
+  0% {
+      opacity: 0;
+      transform: translateY(3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+//elements animation
+
+@keyframes moveInRightImg1 {
+    0% {
+        opacity: 0;
+        transform: translate(40rem, 10rem);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+  }
+
+  @keyframes moveInRightImg2 {
+    0% {
+        opacity: 0;
+        transform: translate(20rem, -20rem)
+                    rotate(85deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0,0)
+                    rotate(0);
+    }
+  }
+
+  @keyframes moveInRightImg3 {
+    0% {
+        opacity: 0;
+        transform: translate(40rem, -40rem);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+  }
+
+  @keyframes moveInRightImg4 {
+    0% {
+        opacity: 0;
+        transform: translate(-20rem, -40rem);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+  }
+
+

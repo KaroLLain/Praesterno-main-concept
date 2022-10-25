@@ -1,0 +1,99 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    font-size: $default-font-size;
+
+    //change for the <buttton> element
+
+    border: .2rem solid $color-primary;
+    cursor: pointer;
+
+    }
+
+    &:hover{
+        transform: translateY(-.3rem);
+        box-shadow: 0 10px 20px $color-btn-shadow;
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.5);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 10px 5px $color-btn-shadow;
+    }
+
+    &--white {
+        background-color: $color-primary-biis;
+        color: $color-theme-dark;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 3rem;
+        transition: all .2s;
+
+        &::after {
+            background-color: $color-primary-biis;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .6s;
+    }
+
+    &--animated {
+        animation: moveInButton .8s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+    &--text {
+        color: $color-theme-dark;
+        background-color: $color-primary-op;
+        margin-top: 3rem;
+        margin-left: $margin-left;
+        padding: 1.5rem 4rem;
+        border-radius: 3rem;
+
+    
+        &:link,
+        &:visited {
+            font-size: $default-font-size;
+            color: $color-theme-dark;
+            display: inline-block;
+            text-decoration: none;
+            padding: 3px;
+            transition: all .2s;
+        }
+    
+        &:hover {
+            background-color: transparent;
+            border-radius: 3rem;
+            color: $color-theme-dark;
+            box-shadow: 0 1rem 2rem $color-btn-shadow;
+            transform: translateY(-2px);
+        }
+    
+        &:active {
+            background-color: $color-primary-op;
+            transform: translateY(-.1rem);
+            box-shadow: 0 10px 5px $color-btn-shadow;
+        }
+        
+    }
+
+}
+
